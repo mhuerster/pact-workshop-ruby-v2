@@ -15,7 +15,7 @@ GEM
       json (~> 1.8)
       multi_xml (>= 0.5.2)
     i18n (0.7.0)
-    json (1.8.3)
+    json (1.8.6)
     method_source (0.8.2)
     minitest (5.8.4)
     multi_xml (0.5.5)
@@ -95,4 +95,4 @@ DEPENDENCIES
   rspec
 
 BUNDLED WITH
-   1.11.2
+   1.16.1
