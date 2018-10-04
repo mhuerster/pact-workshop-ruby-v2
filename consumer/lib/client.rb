@@ -10,6 +10,16 @@ class Client
     @base_uri = uri
   end
 
+  def process_data
+    data = load_provider_json
+    ap data
+    value = 100 / data['count']
+    date = Time.parse(data['date'])
+    puts value
+    puts date
+    [value, date]
+  end
+
   def load_provider_json
     response = HTTParty.get(URI::encode("http://#{base_uri}/provider.json?valid_date=" + Time.now.httpdate))
     if response.success?
